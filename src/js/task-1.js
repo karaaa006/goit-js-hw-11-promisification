@@ -2,7 +2,7 @@
 const delay = (ms) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      return resolve(ms);
+      resolve(ms);
     }, ms);
   });
 };

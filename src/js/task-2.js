@@ -12,7 +12,7 @@ const toggleUserState = (allUsers, userName) => {
   );
 
   return new Promise((resolve, reject) => {
-    return resolve(updatedUsers);
+    resolve(updatedUsers);
   });
 };
 

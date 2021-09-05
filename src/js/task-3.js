@@ -9,10 +9,10 @@ const makeTransaction = (transaction) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (canProcess) {
-        return resolve({ id: transaction.id, time: delay });
+        resolve({ id: transaction.id, time: delay });
       }
 
-      return reject(transaction.id);
+      reject(transaction.id);
     }, delay);
   });
 };
